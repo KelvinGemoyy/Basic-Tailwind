@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
     <title>Belajar Tailwind</title>
+    <style type="text/tailwindcss">
+        * {
+            border: 1px solid red;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello World</h1>
+
+    <section>
+        <h2>Spacing</h2>
+        <div class="m-4">Margin</div>
+    </section>
 </body>
 </html>
